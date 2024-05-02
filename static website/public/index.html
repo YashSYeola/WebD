@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Static Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simple Static Website</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome to My Website!</h2>
+        <p>This is a simple static website created using HTML, inline CSS, and JavaScript.</p>
+        <p>Here's a random number generated using JavaScript: <span id="randomNumber"></span></p>
+    </div>
+    <script>
+        // JavaScript code to generate a random number and display it on the page
+        document.addEventListener('DOMContentLoaded', function() {
+            var randomNumber = Math.floor(Math.random() * 100) + 1; // Generates a random number between 1 and 100
+            document.getElementById('randomNumber').textContent = randomNumber;
+        });
+    </script>
+</body>
+</html>
